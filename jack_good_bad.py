@@ -7,7 +7,7 @@
 ####
 ####situation_description|good_action|good_result|bad_action|bad_result
 content_format = ['situation','good_choice','good_result','bad_choice','bad_result']
-content_file = "content.txt"
+content_file = "rhema/content.txt"
 
 storyline = '''
 Welcome to TITLE.  In this game, you must choose between good and bad.
@@ -35,7 +35,8 @@ def load_story_content():
 
 #fruitful functiont that returns "good" or "bad" and takes a story content entry as an argument
 good_in_a_row = 0
-
+bad_in_a_row = 0    
+    
 
 def player_choose(content):
     global good_in_a_row
@@ -56,8 +57,7 @@ def player_choose(content):
         good_in_a_row = 0
     
     
-bad_in_a_row = 0    
-    
+
     
     if choice == 2:
         bad_in_a_row+=1
